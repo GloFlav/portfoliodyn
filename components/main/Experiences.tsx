@@ -12,7 +12,7 @@ const Experiences = () => {
       </h1>
       <div className="h-full w-full flex flex-col md:flex-row gap-10 px-10">
         <ProjectCard
-          src="https://raw.githubusercontent.com/GloFlav/portfoliodyn/main/public"
+          src="https://raw.githubusercontent.com/GloFlav/portfoliodyn/main/public/AEENI.jpg"
           title="2024"
           description="President of ENI Students Association"
           link="gloriaflavien.netlify.app"
