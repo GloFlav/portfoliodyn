@@ -16,8 +16,8 @@ const ProjectCard = ({ src, title, description, link }: Props) => {
         <Image
           src={src}
           alt={title}
-          width={400}
-          height={300}
+          width={500}
+          height={700}
           className="w-full object-contain"
         />
         <div className="relative p-4">
