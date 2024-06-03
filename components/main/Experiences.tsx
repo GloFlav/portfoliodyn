@@ -12,12 +12,6 @@ const Experiences = () => {
       </h1>
       <div className="h-full w-full flex flex-col md:flex-row gap-10 px-10">
         <ProjectCard
-          src="https://raw.githubusercontent.com/GloFlav/portfoliodyn/main/public/AEENI.jpg"
-          title="2024"
-          description="President of ENI Students Association"
-          link="gloriaflavien.netlify.app"
-        />
-        <ProjectCard
           src="https://raw.githubusercontent.com/GloFlav/portfoliodyn/main/public/idea.jpg"
           title="2024"
           link="gloriaflavien.netlify.app"
@@ -45,7 +39,7 @@ const Experiences = () => {
       <div className="h-full w-full flex flex-col md:flex-row gap-10 px-10">
         <ProjectCard
           src="https://raw.githubusercontent.com/GloFlav/portfoliodyn/main/public/AEENI.jpg"
-          title="2023"
+          title="2023-2024"
           description="President of ENI Students Association"
           link="gloriaflavien.netlify.app"
         />
