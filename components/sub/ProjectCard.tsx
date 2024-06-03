@@ -12,12 +12,12 @@ interface Props {
 const ProjectCard = ({ src, title, description, link }: Props) => {
   return (
     <div className="relative overflow-hidden rounded-lg shadow-lg border border-[#ddf700] cursor-pointer">
-      <div style={{ width: "500px", height: "600px" }}>
+      <div style={{ width: "500px", height: "700px" }}>
         <Image
           src={src}
           alt={title}
-          width={500}
-          height={300}
+          width={1000}
+          height={1000}
           layout="responsive"
           className="w-full h-auto"
         />
