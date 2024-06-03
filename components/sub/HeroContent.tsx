@@ -69,7 +69,7 @@ const HeroContent = () => {
           variants={slideInFromLeft(0.3)}
           className="text-lg text-gray-400 my-5 max-w-[600px]"
         >
-          I'm a versatile IT professional comfortable with both front-end and back-end development. My strength lies in efficiently solving problems, as well as being adaptable in project management and design. My passion for technology drives me to constantly seek new ways to innovate and create effective solutions to meet my clients needs.
+          I&apos;m a versatile IT professional comfortable with both front-end and back-end development. My strength lies in efficiently solving problems, as well as being adaptable in project management and design. My passion for technology drives me to constantly seek new ways to innovate and create effective solutions to meet my clients needs.
         </motion.p>
         <motion.a
           variants={slideInFromLeft(0.5)}
