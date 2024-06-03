@@ -12,13 +12,13 @@ const Projects = () => {
       </h1>
       <div className="h-full w-full flex flex-col md:flex-row gap-10 px-10">
         <ProjectCard
-          src="https://raw.githubusercontent.com/GloFlav/portfoliodyn/main/public/PortfolioCli.png"
+          src="https://raw.githubusercontent.com/GloFlav/portfoliodyn/main/public/PortfolioCli.PNG"
           title="PortFolio Command Line Interface"
           description="A Portfolio CLI form to know about the autor and imitate a command line in our exploitation system."
           link="https://gloriaflavien.netlify.app"
         />
         <ProjectCard
-          src="https://raw.githubusercontent.com/GloFlav/portfoliodyn/main/public/PortfolioDyn.png"
+          src="https://raw.githubusercontent.com/GloFlav/portfoliodyn/main/public/PortfolioDyn.PNG"
           title="Interactive Website Portfolio"
           description="A dynamic portfolio."
           link="gloriaflavien.netlify.app"
