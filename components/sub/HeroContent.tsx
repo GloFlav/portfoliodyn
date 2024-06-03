@@ -27,7 +27,7 @@ const HeroContent = () => {
           {/* <SparklesIcon className="text-[#b49bff] mr-[10px] h-5 w-5" /> */}
           <Image
             src="/feather.png"
-            alt="work icons"
+            alt="feather"
             height={150}
             width={250}
             style={{ transform: 'rotate(29deg)'}}
@@ -50,7 +50,7 @@ const HeroContent = () => {
             Hey, I&apos;m
               <Image
                 src="/logo.png"
-                alt="work icons"
+                alt="logo"
                 height={150}
                 width={250}
               />
@@ -86,7 +86,7 @@ const HeroContent = () => {
       >
         <Image
           src="/me.png"
-          alt="work icons"
+          alt="me"
           height={500}
           width={500}
         />
