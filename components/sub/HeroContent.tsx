@@ -47,7 +47,7 @@ const HeroContent = () => {
           className="flex flex-col gap-6 mt-6 text-6xl font-bold text-white max-w-[600px] w-auto h-auto"
         >
           <span>
-            Hey, I'm
+            Hey, I&apos;m
               <Image
                 src="/logo.png"
                 alt="work icons"

@@ -10,7 +10,7 @@ const SkillText = () => {
         variants={slideInFromLeft(0.5)}
         className='text-[30px] text-white font-medium mt-[10px] text-center mb-[15px]'
         >
-            "In computer science, invariants are ephemeral"
+            &quot;In computer science, invariants are ephemeral&quot;
         </motion.div>
         <motion.div
         variants={slideInFromRight(0.5)}

@@ -40,9 +40,9 @@ const Navbar = () => {
           </div>
         </div>
 
-          {Socials.map((social) => (
-          <div className="flex flex-row gap-2 py-2 button-primary text-center text-white cursor-pointer mr-[20px] px-[30px] py-[15px] rounded-full text-gray-200 rounded-lg max-w-[200px]">
-          <a key={social.name} 
+          {Socials.map((social, index) => (
+          <div key={index} className="flex flex-row gap-2 py-2 button-primary text-center text-white cursor-pointer mr-[20px] px-[30px] py-[15px] rounded-full text-gray-200 rounded-lg max-w-[200px]">
+          <a /*key={social.name} */
               href={social.href} > <Image
               src={social.src}
               alt={social.name}
