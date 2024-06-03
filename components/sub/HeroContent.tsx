@@ -26,7 +26,7 @@ const HeroContent = () => {
         >
           {/* <SparklesIcon className="text-[#b49bff] mr-[10px] h-5 w-5" /> */}
           <Image
-            src="/feather.png"
+            src="https://raw.githubusercontent.com/GloFlav/portfoliodyn/main/public/feather.png"
             alt="feather"
             height={150}
             width={250}
@@ -85,7 +85,7 @@ const HeroContent = () => {
         // className="w-full h-full flex justify-center items-center"
       >
         <Image
-          src="/me.png"
+          src="https://raw.githubusercontent.com/GloFlav/portfoliodyn/main/public/me.png"
           alt="me"
           height={500}
           width={500}
