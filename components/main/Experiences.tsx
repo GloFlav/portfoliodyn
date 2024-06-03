@@ -77,19 +77,19 @@ const Experiences = () => {
         />
         <ProjectCard
           src="/feather.png"
-          title="2022"
+          title="2021"
           link="gloriaflavien.netlify.app"
           description="Designer and developper at CIDST (Intern) "
         />
         <ProjectCard
           src="/feather.png"
-          title="2022"
+          title="2021"
           link="https://www.gloriaflavien.netlify.app"
           description=" Designer and developper at Maison de la Communication Universitaire (Intern)"
         />
         <ProjectCard
           src="/feather.png"
-          title="2022"
+          title="2021"
           description=" Organizer of 'Salon de l'étudiant et de l'emploi 3rd edition'"
           link="gloriaflavien.netlify.app"
         />

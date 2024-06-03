@@ -22,9 +22,9 @@ export const Skill_data = [
   
   export const Socials = [
     {
-      name: "Instagram",
-      src: "/instagram.svg",
-      href: "https://instagram.com/gloflavdrawing/",
+      name: "Linkedin",
+      src: "/linkedin.png",
+      href: "https://www.linkedin.com/in/gloria-flavien-randriambololona/",
     },
     {
       name: "Facebook",
@@ -39,7 +39,7 @@ export const Skill_data = [
     {
       name: "github",
       src: "/gitwhite.png",
-      href: "https://linkedin.com/in/gloria-flavien-randriambololona",
+      href: "https://github.com/GloFlav",
     },
   ];
   

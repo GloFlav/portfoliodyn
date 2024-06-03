@@ -32,6 +32,13 @@ const HeroContent = () => {
             width={250}
             style={{ transform: 'rotate(29deg)'}}
           />
+          <motion.a
+            variants={slideInFromLeft(0.5)}
+            className="py-1 button-primary text-center text-white cursor-pointer mr-[20px] px-[30px] py-[15px] rounded-full text-gray-200 rounded-lg max-w-[700px]"
+            href="https://gloriaflavien.netlify.app" 
+          >
+              Switch to CLI Portfolio
+          </motion.a>
 
         </motion.div>
 

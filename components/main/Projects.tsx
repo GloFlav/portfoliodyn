@@ -15,7 +15,7 @@ const Projects = () => {
           src="/PortfolioCli.png"
           title="PortFolio Command Line Interface"
           description="A Portfolio CLI form to know about the autor and imitate a command line in our exploitation system."
-          link="gloriaflavien.netlify.app"
+          link="https://gloriaflavien.netlify.app"
         />
         <ProjectCard
           src="/PortfolioDyn.png"
