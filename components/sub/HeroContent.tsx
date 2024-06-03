@@ -49,7 +49,7 @@ const HeroContent = () => {
           <span>
             Hey, I&apos;m
               <Image
-                src="/logo.png"
+                src="https://raw.githubusercontent.com/GloFlav/portfoliodyn/main/public/logo.png"
                 alt="logo"
                 height={150}
                 width={250}
