@@ -24,7 +24,7 @@ const Projects = () => {
           link="gloriaflavien.netlify.app"
         />
         <ProjectCard
-          src="https://raw.githubusercontent.com/GloFlav/portfoliodyn/main/public/feather.png"
+          src="https://raw.githubusercontent.com/GloFlav/portfoliodyn/main/public/tasksheduling.PNG"
           title="Task Scheduling"
           description="Litle program to order and schedule task with their weight (duration or difficulty). A Web application demonstrating the best scheduling of tasks using the table and graph method."
           link="gloriaflavien.netlify.app"
