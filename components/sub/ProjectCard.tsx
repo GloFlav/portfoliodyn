@@ -12,8 +12,8 @@ interface Props {
 const ProjectCard = ({ src, title, description, link }: Props) => {
   return (
     <div className="relative overflow-hidden rounded-lg shadow-lg border border-[#ddf700] cursor-pointer">
-        <Link href={link} passHref>
-      <Image
+      <div style={{ width: "300px", height: "400px" }}>
+        <Image
           src={src}
           alt={title}
           width={1000}
@@ -24,8 +24,8 @@ const ProjectCard = ({ src, title, description, link }: Props) => {
           <h1 className="text-2xl font-semibold text-white">{title}</h1>
           <p className="mt-2 text-gray-300">{description}</p>
         </div>
-      </Link>
       </div>
+    </div>
   );
 };
 
