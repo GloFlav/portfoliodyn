@@ -11,7 +11,7 @@ const Navbar = () => {
           className="h-auto w-auto flex flex-row items-center"
         >
           <Image
-            src="/logo.png"
+            src="https://raw.githubusercontent.com/GloFlav/portfoliodyn/main/public/logo.png"
             alt="logo"
             width={170}
             height={170}
