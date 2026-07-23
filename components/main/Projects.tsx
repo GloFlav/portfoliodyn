@@ -1,9 +1,14 @@
 import React from "react";
 import ProjectCard from "../sub/ProjectCard";
 
+// next/image + unoptimized: true ne préfixe pas basePath automatiquement,
+// on l'applique à la main pour les images locales servies depuis /public.
+const basePath =
+  process.env.NODE_ENV === "production" ? "/portfoliodyn" : "";
+
 const PROJECTS = [
   {
-    src: "/apiqa-cover.png",
+    src: `${basePath}/apiqa-cover.png`,
     title: "APIQA — refonte de site créatif",
     description:
       "Proposition externe de refonte pour APIQA (agence de communication à Antananarivo). Direction éditoriale, glass morphism, animations GSAP.",

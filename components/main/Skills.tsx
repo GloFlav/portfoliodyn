@@ -8,6 +8,11 @@ import React from "react";
 import SkillDataProvider from "../sub/SkillDataProvider";
 import SkillText from "../sub/SkillText";
 
+// GH Pages sert le portfolio sous /portfoliodyn — <video> hors <Image>
+// n'a pas de basePath auto, on l'ajoute à la main pour la prod.
+const basePath =
+  process.env.NODE_ENV === "production" ? "/portfoliodyn" : "";
+
 const Skills = () => {
   return (
     <section
@@ -84,7 +89,7 @@ const Skills = () => {
           loop
           muted
           autoPlay
-          src="/skills.mp4"
+          src={`${basePath}/skills.mp4`}
         />
       </div>
     </section>
