@@ -8,9 +8,8 @@ import {
   slideInFromTop,
 } from "@/utils/motion";
 import Image from "next/image";
+import { COLLAB_URL } from "@/constants";
 
-const COLLAB_MAILTO =
-  "mailto:rasgloflav@gmail.com?subject=Let%27s%20collaborate%20%E2%80%94%20new%20project";
 const CV_LINK =
   "https://drive.google.com/file/d/1Y0gzoGKeHJkvvSkJY-6nBosmC5Vghhku/view?usp=sharing";
 const CLI_PORTFOLIO = "https://gloriaflavien.netlify.app";
@@ -65,7 +64,9 @@ const HeroContent = () => {
           className="flex flex-wrap items-center gap-3 pt-2"
         >
           <a
-            href={COLLAB_MAILTO}
+            href={COLLAB_URL}
+            target="_blank"
+            rel="noopener noreferrer"
             className="inline-flex items-center gap-2 rounded-full bg-yellow-400 px-6 py-3 text-sm font-semibold text-black shadow-[0_15px_40px_-15px_rgba(255,212,0,0.6)] transition hover:brightness-110"
           >
             Let&apos;s collaborate

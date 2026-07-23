@@ -3,10 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-import { Socials } from "@/constants";
-
-const COLLAB_MAILTO =
-  "mailto:rasgloflav@gmail.com?subject=Let%27s%20collaborate%20%E2%80%94%20new%20project";
+import { COLLAB_URL, Socials } from "@/constants";
 
 const Footer = () => {
   return (
@@ -21,12 +18,14 @@ const Footer = () => {
               Let&apos;s talk over a coffee — remote or on the ground in Antananarivo.
             </p>
           </div>
-          <Link
-            href={COLLAB_MAILTO}
+          <a
+            href={COLLAB_URL}
+            target="_blank"
+            rel="noopener noreferrer"
             className="inline-flex items-center gap-2 rounded-full bg-yellow-400 px-6 py-3 text-sm font-semibold text-black shadow-[0_15px_40px_-15px_rgba(255,212,0,0.6)] transition hover:brightness-110"
           >
             Let&apos;s collaborate
-          </Link>
+          </a>
         </div>
 
         <div className="flex flex-col items-start justify-between gap-6 border-t border-white/5 pt-8 md:flex-row md:items-center">

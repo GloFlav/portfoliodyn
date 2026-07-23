@@ -1,6 +1,6 @@
 "use client";
 
-import { Socials } from "@/constants";
+import { COLLAB_URL, Socials } from "@/constants";
 import Image from "next/image";
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
@@ -11,9 +11,6 @@ const NAV_LINKS = [
   { href: "#experiences", label: "Experiences" },
   { href: "#skills", label: "Skills" },
 ];
-
-const COLLAB_MAILTO =
-  "mailto:rasgloflav@gmail.com?subject=Let%27s%20collaborate%20%E2%80%94%20new%20project";
 
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -90,7 +87,9 @@ const Navbar = () => {
 
           {/* CTA collaborate */}
           <a
-            href={COLLAB_MAILTO}
+            href={COLLAB_URL}
+            target="_blank"
+            rel="noopener noreferrer"
             className="inline-flex items-center gap-2 rounded-full bg-yellow-400 px-4 py-2 text-sm font-semibold text-black shadow-[0_10px_30px_-10px_rgba(255,212,0,0.6)] transition hover:brightness-110"
           >
             Let&apos;s collaborate

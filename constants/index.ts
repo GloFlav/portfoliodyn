@@ -1,3 +1,11 @@
+// CTA "Let's collaborate" — Gmail compose URL (vs mailto:) car mailto: reste
+// silencieux sur les machines sans client mail par défaut configuré. Gmail
+// compose ouvre gmail.com/compose dans un nouvel onglet et marche pour tout
+// le monde qui a un compte Google (~majorité des visiteurs pro).
+export const COLLAB_URL =
+  "https://mail.google.com/mail/?view=cm&fs=1&to=rasgloflav@gmail.com&su=" +
+  encodeURIComponent("Let's collaborate — new project");
+
 export const Skill_data = [
     {
       skill_name: "Java Script",
