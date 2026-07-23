@@ -7,88 +7,118 @@ import {
   slideInFromRight,
   slideInFromTop,
 } from "@/utils/motion";
-// import { SparklesIcon } from "@heroicons/react/24/solid";
 import Image from "next/image";
+
+const COLLAB_MAILTO =
+  "mailto:rasgloflav@gmail.com?subject=Let%27s%20collaborate%20%E2%80%94%20new%20project";
+const CV_LINK =
+  "https://drive.google.com/file/d/1Y0gzoGKeHJkvvSkJY-6nBosmC5Vghhku/view?usp=sharing";
+const CLI_PORTFOLIO = "https://gloriaflavien.netlify.app";
 
 const HeroContent = () => {
   return (
     <motion.div
       initial="hidden"
       animate="visible"
-      className="flex flex-row items-center justify-center px-10 mt-15 w-full z-[20]"
+      className="mx-auto flex w-full max-w-7xl flex-col-reverse items-center gap-10 px-6 pb-20 pt-32 md:flex-row md:items-center md:gap-16 md:px-10 md:pt-40"
     >
-      <div 
-      // className="h-full w-full flex flex-col  justify-center m-auto text-start"
-      >
+      {/* Left column — text + CTAs */}
+      <div className="flex w-full flex-col gap-6 md:w-3/5">
         <motion.div
           variants={slideInFromTop}
-          // className="Welcome-box "
+          className="inline-flex w-fit items-center gap-2 rounded-full border border-yellow-500/30 bg-yellow-500/5 px-3 py-1"
         >
-          {/* <SparklesIcon className="text-[#b49bff] mr-[10px] h-5 w-5" /> */}
-          <Image
-            src="https://raw.githubusercontent.com/GloFlav/portfoliodyn/main/public/feather.png"
-            alt="feather"
-            height={150}
-            width={250}
-            style={{ transform: 'rotate(29deg)'}}
-          />
-          <motion.a
-            variants={slideInFromLeft(0.5)}
-            className="py-1 button-primary text-center text-white cursor-pointer mr-[20px] px-[30px] py-[15px] rounded-full text-gray-200 rounded-lg max-w-[700px]"
-            href="https://gloriaflavien.netlify.app" 
-          >
-              Switch to CLI Portfolio
-          </motion.a>
-
-        </motion.div>
-
-        <motion.div
-          variants={slideInFromLeft(0.2)}
-          className="flex flex-col gap-6 mt-6 text-6xl font-bold text-white max-w-[600px] w-auto h-auto"
-        >
-          <span>
-            Hey, I&apos;m
-              <Image
-                src="https://raw.githubusercontent.com/GloFlav/portfoliodyn/main/public/logo.png"
-                alt="logo"
-                height={150}
-                width={250}
-              />
-            A <span className="text-transparent bg-clip-text bg-gradient-to-r from-yellow-300 to-yellow-700">
-              {" "}
-              Full Stack Developper{" "}
-            </span>
-            and an<span className="text-transparent bg-clip-text bg-gradient-to-r from-yellow-300 to-yellow-700">
-              {" "}
-               Event Organizer{" "}
-            </span>
+          <span className="h-2 w-2 animate-pulse rounded-full bg-yellow-400" />
+          <span className="font-mono text-[11px] uppercase tracking-[0.18em] text-yellow-300">
+            Available for new projects
           </span>
         </motion.div>
 
+        <motion.h1
+          variants={slideInFromLeft(0.2)}
+          className="text-4xl font-bold leading-[1.05] text-white md:text-6xl"
+        >
+          Hey, I&apos;m <span className="text-white">Flavien</span>.
+          <br />
+          <span className="bg-gradient-to-r from-yellow-300 to-yellow-600 bg-clip-text text-transparent">
+            Full-stack developer
+          </span>{" "}
+          &{" "}
+          <span className="bg-gradient-to-r from-yellow-300 to-yellow-600 bg-clip-text text-transparent">
+            event organizer
+          </span>
+          .
+        </motion.h1>
+
         <motion.p
           variants={slideInFromLeft(0.3)}
-          className="text-lg text-gray-400 my-5 max-w-[600px]"
+          className="max-w-[560px] text-base leading-relaxed text-gray-400 md:text-lg"
         >
-          I am a versatile IT professional comfortable with both front-end and back-end development. My strength lies in efficiently solving problems, as well as being adaptable in project management and design. My passion for technology drives me to constantly seek new ways to innovate and create effective solutions to meet my clients needs.
+          I ship web products end to end — from architecture to pixel-perfect
+          front-ends — and design tech events on the side. Comfortable with
+          both back and front, and equally at ease shipping code or holding a
+          mic on stage.
         </motion.p>
-        <motion.a
+
+        <motion.div
           variants={slideInFromLeft(0.5)}
-          className="py-1 button-primary text-center text-white cursor-pointer mr-[20px] px-[30px] py-[15px] rounded-full text-gray-200 rounded-lg max-w-[700px]"
-          href="https://drive.google.com/file/d/1Y0gzoGKeHJkvvSkJY-6nBosmC5Vghhku/view?usp=sharing" 
+          className="flex flex-wrap items-center gap-3 pt-2"
         >
-            Get my CV here 
-        </motion.a>
+          <a
+            href={COLLAB_MAILTO}
+            className="inline-flex items-center gap-2 rounded-full bg-yellow-400 px-6 py-3 text-sm font-semibold text-black shadow-[0_15px_40px_-15px_rgba(255,212,0,0.6)] transition hover:brightness-110"
+          >
+            Let&apos;s collaborate
+            <svg
+              width="16"
+              height="16"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              aria-hidden="true"
+            >
+              <path
+                d="M5 12H19M13 6L19 12L13 18"
+                stroke="currentColor"
+                strokeWidth="2"
+                strokeLinecap="square"
+              />
+            </svg>
+          </a>
+          <a
+            href={CV_LINK}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/[0.03] px-6 py-3 text-sm font-medium text-gray-100 transition hover:border-yellow-400/60 hover:bg-yellow-400/10 hover:text-yellow-200"
+          >
+            Download CV
+          </a>
+          <a
+            href={CLI_PORTFOLIO}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 font-mono text-xs uppercase tracking-[0.16em] text-gray-500 transition hover:text-yellow-300"
+          >
+            Switch to CLI portfolio →
+          </a>
+        </motion.div>
       </div>
 
+      {/* Right column — portrait */}
       <motion.div
         variants={slideInFromRight(0.5)}
-        // className="w-full h-full flex justify-center items-center"
+        className="relative flex w-full justify-center md:w-2/5"
       >
+        <div className="pointer-events-none absolute inset-0 -z-10 blur-3xl">
+          <div className="mx-auto h-[380px] w-[380px] rounded-full bg-yellow-500/20" />
+        </div>
         <Image
           src="https://raw.githubusercontent.com/GloFlav/portfoliodyn/main/public/me.png"
-          alt="me"
-          height={500}
+          alt="Flavien portrait"
           width={500}
+          height={500}
+          priority
+          className="h-auto w-full max-w-[440px] object-contain"
         />
       </motion.div>
     </motion.div>

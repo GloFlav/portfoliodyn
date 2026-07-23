@@ -78,17 +78,9 @@ export const Skill_data = [
       height: 70,
     },
     {
-      skill_name: "Docker",
-      Image: "https://raw.githubusercontent.com/GloFlav/portfoliodyn/main/public/docker.webp",
-      width: 70,
-      height: 70,
-    },
-  
-    {
       skill_name: "Figma",
       Image: "https://raw.githubusercontent.com/GloFlav/portfoliodyn/main/public/figma.png",
       width: 50,
       height: 50,
     },
-  
   ];
