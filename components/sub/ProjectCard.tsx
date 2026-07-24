@@ -25,7 +25,7 @@ const ProjectCard = ({ src, title, description, link, tag, year }: Props) => {
           alt={title}
           fill
           sizes="(max-width: 768px) 100vw, 420px"
-          className="object-cover transition duration-500 group-hover:scale-105"
+          className="object-cover object-top transition duration-500 group-hover:scale-105"
         />
         {tag && (
           <span className="absolute left-3 top-3 rounded-full bg-black/60 px-3 py-1 font-mono text-[10px] uppercase tracking-widest text-yellow-300 backdrop-blur">
