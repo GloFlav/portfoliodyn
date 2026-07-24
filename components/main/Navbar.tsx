@@ -32,7 +32,7 @@ const Navbar = () => {
           : "border-b border-transparent bg-black/40 backdrop-blur-md"
       }`}
     >
-      <div className="mx-auto flex h-[80px] w-full max-w-7xl items-center justify-between gap-4 px-6 md:px-10">
+      <div className="mx-auto flex h-[152px] w-full max-w-7xl items-center justify-between gap-4 px-6 md:px-10">
         {/* Logo */}
         <Link
           href="#about-me"
@@ -43,9 +43,9 @@ const Navbar = () => {
           <Image
             src="https://raw.githubusercontent.com/GloFlav/portfoliodyn/main/public/logo.png"
             alt="Flavien"
-            width={160}
-            height={64}
-            className="h-16 w-auto object-contain"
+            width={320}
+            height={128}
+            className="h-32 w-auto object-contain"
             priority
           />
         </Link>
