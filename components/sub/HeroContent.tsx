@@ -129,12 +129,12 @@ const HeroContent = () => {
           <div className="mx-auto h-[380px] w-[380px] rounded-full bg-yellow-500/20" />
         </div>
         <Image
-          src={`${basePath}/flavien-portrait.jpg`}
+          src={`${basePath}/flavien-portrait.png`}
           alt="Flavien portrait"
           width={500}
           height={700}
           priority
-          className="h-auto w-full max-w-[420px] rounded-2xl object-cover shadow-[0_30px_80px_-20px_rgba(0,0,0,0.6)]"
+          className="h-auto w-full max-w-[440px] object-contain drop-shadow-[0_20px_40px_rgba(0,0,0,0.55)]"
         />
       </motion.div>
     </motion.div>
