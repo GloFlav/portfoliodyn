@@ -46,9 +46,6 @@ const Navbar = () => {
             height={44}
             className="h-11 w-11 object-contain"
           />
-          <span className="hidden font-mono text-xs uppercase tracking-[0.2em] text-gray-400 md:block">
-            Flavien
-          </span>
         </Link>
 
         {/* Nav links — desktop */}

@@ -10,8 +10,10 @@ import {
 import Image from "next/image";
 import { COLLAB_URL } from "@/constants";
 
-const CV_LINK =
-  "https://drive.google.com/file/d/1Y0gzoGKeHJkvvSkJY-6nBosmC5Vghhku/view?usp=sharing";
+// CV local — sert le PDF depuis /public via basePath en prod
+const basePath =
+  process.env.NODE_ENV === "production" ? "/portfoliodyn" : "";
+const CV_LINK = `${basePath}/CV_Flavien.pdf`;
 const CLI_PORTFOLIO = "https://gloriaflavien.netlify.app";
 
 const HeroContent = () => {
@@ -37,7 +39,18 @@ const HeroContent = () => {
           variants={slideInFromLeft(0.2)}
           className="text-4xl font-bold leading-[1.05] text-white md:text-6xl"
         >
-          Hey, I&apos;m <span className="text-white">Flavien</span>.
+          <span className="flex flex-wrap items-center gap-x-3">
+            Hey, I&apos;m
+            <Image
+              src="https://raw.githubusercontent.com/GloFlav/portfoliodyn/main/public/logo.png"
+              alt="Flavien"
+              width={220}
+              height={70}
+              priority
+              className="inline-block h-[0.9em] w-auto align-baseline"
+            />
+            .
+          </span>
           <br />
           <span className="bg-gradient-to-r from-yellow-300 to-yellow-600 bg-clip-text text-transparent">
             Full-stack developer
@@ -88,10 +101,12 @@ const HeroContent = () => {
           </a>
           <a
             href={CV_LINK}
-            target="_blank"
-            rel="noopener noreferrer"
+            download="CV_Flavien.pdf"
             className="inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/[0.03] px-6 py-3 text-sm font-medium text-gray-100 transition hover:border-yellow-400/60 hover:bg-yellow-400/10 hover:text-yellow-200"
           >
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <path d="M12 3V16M12 16L7 11M12 16L17 11M5 21H19" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+            </svg>
             Download CV
           </a>
           <a
@@ -114,12 +129,12 @@ const HeroContent = () => {
           <div className="mx-auto h-[380px] w-[380px] rounded-full bg-yellow-500/20" />
         </div>
         <Image
-          src="https://raw.githubusercontent.com/GloFlav/portfoliodyn/main/public/me.png"
+          src={`${basePath}/flavien-portrait.jpg`}
           alt="Flavien portrait"
           width={500}
-          height={500}
+          height={700}
           priority
-          className="h-auto w-full max-w-[440px] object-contain"
+          className="h-auto w-full max-w-[420px] rounded-2xl object-cover shadow-[0_30px_80px_-20px_rgba(0,0,0,0.6)]"
         />
       </motion.div>
     </motion.div>

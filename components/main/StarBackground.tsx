@@ -40,7 +40,10 @@ const StarBackground = (props: any) => {
 };
 
 const StarsCanvas = () => (
-    <div className="w-full h-auto fixed inset-0 z-[20]">
+    // pointer-events-none : sinon ce div fixed z-20 pleine viewport
+    // intercepte TOUS les clics et bloque la sélection de texte de la page.
+    // z-[-1] pour rester derrière tout le contenu (nav z-50, sections default).
+    <div className="w-full h-auto fixed inset-0 z-[-1] pointer-events-none">
         <Canvas camera={{position: [0, 0, 1]}}>
         <Suspense fallback={null}>
             <StarBackground />

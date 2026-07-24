@@ -17,6 +17,42 @@ const PROJECTS = [
     link: "https://gloflav.github.io/apiqa-refonte-demo/",
   },
   {
+    src: `${basePath}/proj-hellosoins-com.png`,
+    title: "HelloSoins — marketplace santé (France)",
+    description:
+      "Plateforme mettant en relation patients et praticiens en médecine douce. Recherche géolocalisée, prise de rendez-vous, espace pro.",
+    tag: "Web · Santé",
+    year: "2025",
+    link: "https://hellosoins.com",
+  },
+  {
+    src: `${basePath}/proj-hellosoins-ch.png`,
+    title: "HelloSoins — déclinaison Suisse",
+    description:
+      "Adaptation de la plateforme HelloSoins au marché suisse (CH-FR) : contenu réglementaire, réseau de praticiens local, tarification adaptée.",
+    tag: "Web · Santé",
+    year: "2025",
+    link: "https://hellosoins.ch",
+  },
+  {
+    src: `${basePath}/proj-uaceem.png`,
+    title: "Université ACEEM",
+    description:
+      "Site institutionnel de l'Université ACEEM (Madagascar) : formations, actualités, relations internationales, inscriptions en ligne.",
+    tag: "Web · Éducation",
+    year: "2025",
+    link: "https://uaceem.mg/",
+  },
+  {
+    src: `${basePath}/proj-lexia-ia.png`,
+    title: "Lexia-IA — outils IA pour métiers du droit",
+    description:
+      "Suite d'outils IA pour avocats, notaires, experts-comptables : recherche juridique, secrétariat, CRM, cofre-fort, messagerie. Déploiement 48 h.",
+    tag: "SaaS · IA",
+    year: "2025",
+    link: "https://lexia-ia.fr",
+  },
+  {
     src: "https://raw.githubusercontent.com/GloFlav/portfoliodyn/main/public/portfolioCli.PNG",
     title: "CLI Portfolio",
     description:
